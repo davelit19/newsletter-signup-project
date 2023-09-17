@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <meta name="author" content="Imevbore David">
-        <link href="styles.css" rel="stylesheet">
-        <title>Newsletter</title>
-        <link rel="shortcut icon" type="image/png" href="favicon-32x32.png">
-    </head>
-    <body class="body1">
-      <main class="main1">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Imevbore David">
+    <link href="styles.css" rel="stylesheet">
+    <title>Newsletter</title>
+    <link rel="shortcut icon" type="image/png" href="favicon-32x32.png">
+</head>
+
+<body class="body1">
+    <main class="main1">
         <div class="container">
-         <div class="sub-container">
-            <h1 class="head">Stay Updated!</h1>
-            <p>Join 60,000+ product managers receiving monthly updates on:</p>
-            <ul>
-                <li>
-                  <img src="icon-list.svg">
-                  <p>Product discovery and building what matters</p>
-                </li>
-                <li>    
-                    <img src="icon-list.svg">
-                    <p>Measuring to ensure updates are a success</p>
-                </li>
-                <li>
-                    <img src="icon-list.svg">
-                    <p>And much more!</p>
-                </li>
-            </ul>
-          </div>
+            <div class="sub-container">
+                <h1 class="head">Stay Updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li>
+                        <img src="icon-list.svg">
+                        <p>Product discovery and building what matters</p>
+                    </li>
+                    <li>
+                        <img src="icon-list.svg">
+                        <p>Measuring to ensure updates are a success</p>
+                    </li>
+                    <li>
+                        <img src="icon-list.svg">
+                        <p>And much more!</p>
+                    </li>
+                </ul>
+            </div>
             <form id="form">
                 <div class="sub-form">
                     <label for="email">Email address</label>
                     <div class="error" id="error-message">Valid email required</div>
                 </div>
-                <input type="email" placeholder="email@company.com" id="email" required autocomplete="on" ><br>
+                <input type="email" placeholder="email@company.com" id="email" required autocomplete="on"><br>
                 <input type="submit" id="submit" value="Subscribe to monthly newsletter" class="active">
             </form>
 
@@ -42,7 +44,12 @@
         <div class="pic">
             <img src="illustration-sign-up-desktop.svg">
         </div>
-      </main>
-    <script src="index.js" ></script>
-    </body>
+    </main>
+    <script src="index.js">
+        let currentTab = 0;
+        let tab = document.getElementsByClassName("tab");
+        console.log(tab);
+    </script>
+</body>
+
 </html>
